@@ -7,7 +7,7 @@ import {Navbar,
     //GuestButton, 
     HomeContainer, 
     SchoolInfo, 
-    SchoolImage, 
+    // SchoolImage, 
     Title, 
     LoremTextContainer, 
    // AdminRegisterLink,
@@ -40,8 +40,8 @@ const Home = () => {
         navigate('/contact');
     };
 
-    const handleclickcounselor=()=>{
-        navigate('/');
+    const handleclickcounsellor=()=>{
+        navigate('/counsellor');
     };
 
     const handleclickabout=()=>{
@@ -54,9 +54,9 @@ const Home = () => {
         <Navbar>
             <Logo src={cons} alt='Logo'></Logo>
             <NavigationLinks>
-                <NavLink onClick={handleclickcounselor}>Consult an Expert</NavLink>
+                <NavLink onClick={handleclickcounsellor} style={{ textDecoration: "none", cursor: "pointer", color: "#0056b3", fontWeight: "bold" }}>Consult an Expert</NavLink>
                 {/* <NavLink href='#'>Products</NavLink> */}
-                <NavLink onClick={handleclickabout} >About</NavLink>
+                <NavLink onClick={handleclickabout} style={{ textDecoration: "none", cursor: "pointer", color: "#0056b3", fontWeight: "bold" }} >About</NavLink>
 
             </NavigationLinks>
             <ButtonsContainer>
